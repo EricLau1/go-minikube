@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: goapi
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: goapi
+        tier: backend
+    spec:
+      containers:
+      - name: goapi
+        image: goapi:v1
+        ports:
+        - containerPort: 9000

@@ -1,0 +1,10 @@
+apiVersion: v1   #versão da API do Kubernetes 
+kind: Pod        #Tipo do objeto que será criado
+metadata: 
+ name: goapi #Nome de identificação para o objeto pod
+spec:            #Características do objeto
+ containers:
+   - name: goapi
+     image: goapi:v1
+     ports:
+       - containerPort: 9000
