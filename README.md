@@ -46,3 +46,11 @@ Delete images:
     docker rmi -f $(docker images -qa)
 
     docker rm -f $(docker ps -qa)
+
+
+Docker Hub:
+
+    docker tag [IMAGE ID] anoneric/go-minikube-be:latest
+ 
+    docker push anoneric/go-minikube-be
+
